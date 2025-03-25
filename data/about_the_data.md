@@ -7,6 +7,8 @@ The data used to create this dashboard was taken from [Kaggle Fecom Inc. e-Com M
 
 This dashboard is made using [Python Dash](https://dash.plotly.com/) and Pandas to process and manipulate the data. Dash is an open-source Python framework for building data visualization interfaces. Dash is built on top of Plotly.js, React, and Flask. A Minimal dash app contains Layout and Callback. Layout contains HTML components to configure our application view, layout, and style. We also can use additional bootstrap components to improve our application layout and style. Callback is used to make our dashboard more interactive by capturing every event on the layout component like dropdown, radio, slider, etc.
 
+Github Repository: https://github.com/yaumianwar/ecommerce-analytics-dashboard
+
 ---
 
 ## Dashboard Overview
