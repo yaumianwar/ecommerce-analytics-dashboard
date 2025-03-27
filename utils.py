@@ -26,19 +26,19 @@ def get_price_range(value):
         return "> 500"
 
 
-def get_order_by_time(df):
-    order_by_time = df[['Order_Purchase_Timestamp']]
-    order_by_time['Order_Purchase_Timestamp'] = pd.to_datetime(order_by_time['Order_Purchase_Timestamp'])
-    order_by_time['hour'] = order_by_time['Order_Purchase_Timestamp'].dt.hour
-    order_by_time['day_name'] = order_by_time['Order_Purchase_Timestamp'].dt.day_name() 
-    order_by_time['day'] = order_by_time['Order_Purchase_Timestamp'].dt.day
-    order_by_time['day_of_week'] = order_by_time['Order_Purchase_Timestamp'].dt.day_of_week
-    order_by_time['date'] = order_by_time['Order_Purchase_Timestamp'].dt.date
-    order_by_time['month'] = order_by_time['Order_Purchase_Timestamp'].dt.month
-    order_by_time['year'] = order_by_time['Order_Purchase_Timestamp'].dt.year
-    order_by_time['month_year'] = pd.to_datetime(order_by_time[['month', 'year']].assign(DAY=1))
+def get_order_time_info(df):
+    orders_df = df[['Order_Purchase_Timestamp']]
+    orders_df['Order_Purchase_Timestamp'] = pd.to_datetime(orders_df['Order_Purchase_Timestamp'])
+    orders_df['hour'] = orders_df['Order_Purchase_Timestamp'].dt.hour
+    orders_df['day_name'] = orders_df['Order_Purchase_Timestamp'].dt.day_name() 
+    orders_df['day'] = orders_df['Order_Purchase_Timestamp'].dt.day
+    orders_df['day_of_week'] = orders_df['Order_Purchase_Timestamp'].dt.day_of_week
+    orders_df['date'] = orders_df['Order_Purchase_Timestamp'].dt.date
+    orders_df['month'] = orders_df['Order_Purchase_Timestamp'].dt.month
+    orders_df['year'] = orders_df['Order_Purchase_Timestamp'].dt.year
+    orders_df['month_year'] = pd.to_datetime(orders_df[['month', 'year']].assign(DAY=1))
 
-    return order_by_time
+    return orders_df
 
 def get_approval_duration(df):
     df['Order_Purchase_Timestamp'] = pd.to_datetime(df['Order_Purchase_Timestamp'])
