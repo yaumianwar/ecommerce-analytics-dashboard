@@ -26,7 +26,7 @@ The data used to create this dashboard was taken from [Kaggle Fecom Inc. e-Com M
 ### Local Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/ecommerce-analytics-dashboard.git
+   git clone https://github.com/yaumianwar/ecommerce-analytics-dashboard.git
    cd ecommerce-analytics-dashboard
 2. **Set up a virtual environment**
    ```bash
