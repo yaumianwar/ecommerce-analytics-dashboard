@@ -1,5 +1,5 @@
 ### E-Commerce Analytics Dashboard
-*A real-time analytics dashboard for monitoring e-commerce performance.*
+*An interactive analytics dashboard for monitoring e-commerce performance.*
 
 ## Features ✨
 - **Sales Trends**: Track orders and user activity over time.
