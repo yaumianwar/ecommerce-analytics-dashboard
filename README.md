@@ -1,4 +1,4 @@
-### E-Commerce Analytics Dashboard
+# E-Commerce Analytics Dashboard
 *An interactive analytics dashboard for monitoring e-commerce performance.*
 
 ## Features ✨
